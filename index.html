@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmeriCar</title>
+    <link rel="icon" href="/assets/img/favicon.ico"/>
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a186475d34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">         
+            <nav class="nav">
+                <img class="logo nav-link" src="assets/img/logo.png" width="180px">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu .nav-menu_visible">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="index.html">inicio</a></li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="flota.html">flota</a></li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="testimonios.html">reseñas</a></li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main class="main-index">
+        <div class="img-slider">  
+            <div class="form-search">
+                <form class="search">
+                    <label for="retiro">Lugar de retiro</label><br>
+                    <select name="retiro" class="option" placeholder="Lugar de retiro"required >
+                        <option value="">Aeroparque</option>
+                        <option value="">Aeropuerto de Ezeiza</option>
+                    </select><br>
+                                                            
+                    <label for="fechaRetiro">Fecha de retiro</label>
+                    <label for="time-Retire">Hora</label>
+                    <input type="date" id="fechaRetiro" class="field-date" required>
+                    <input type="time" id="time-Retire" class="field-time" required>
+
+                    <label for="devolucion">Lugar de devolucion</label><br>
+                    <select name="devolucion" class="option" placeholder="Lugar de devolucion" required>
+                        <option value="Aeroparque">Aeroparque</option>
+                        <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                    </select><br>
+                        
+                    <label for="fechadevolucion">Fecha de devolución</label>
+                    <label for="time-dev">Hora</label>
+                    <input type="date" id="fechadevolucion" class="field-date" required >
+                    <input type="time" id="time-dev" class="field-time" required>
+
+                    <input type="submit" value="Buscar" class="send">
+                </form>
+            </div>
+        </div>
+    </main>
+   <div class="foot">
+   </div>
+    <footer>
+        <img class="foot-logo" src="assets/img/logo blanco.png">
+        <p>&copy Todos los derechos reservados - 2022</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

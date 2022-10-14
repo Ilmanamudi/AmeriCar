@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmeriCar</title>
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a186475d34.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img class="logo nav-link" src="assets/img/logo.png" width="180px">
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu .nav-menu_visible">
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="index.html">inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="flota.html">flota</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="testimonios.html">reseñas</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a class="nav-menu-link nav-link" href="contacto.html">contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contact">
+
+        <div class="contact">
+
+            <form action="#var" class="contact-form">
+
+                <label for="Name"></label>
+                <input type="text" class="field-ico" id="Name" placeholder="&#xf007;" required>
+
+                <label for="lastname"></label>
+                <input type="text" class="field-ico" id="lastname" placeholder="&#xf007;" required>
+
+                <label for="Mail"></label>
+                <input type="email" class="field-ico" id="mail" placeholder="&#xf0e0;">
+
+                <label for="Telefono"></label>
+                <input type="text" class="field-ico" id="Tlf" placeholder="&#xf095;">
+
+                <label for="Lugarderetiro"></label>
+                <select name="retiro" class="field-contact" required>
+                    <option value="Aeroparque">Aeroparque</option>
+                    <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                </select>
+
+                <label for="fechaRetiro"></label>
+                <input type="date" id="fechaRetiro" class="field-date-contact" min="datetime-local" required>
+
+                <label for="timeRetiro"></label>
+                <input type="time" id="timeRetire" class="field-time-contact" required>
+
+                <label for="lugardedevolucion"></label>
+                <select name="devolucion" class="field-contact" required>
+                    <option value="Aeroparque">Aeroparque</option>
+                    <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                </select>
+
+                <label for="fechadevolucion"></label>
+                <input type="date" id="fechadevolucion" class="field-date-contact" required>
+
+                <label for="timeDev"></label>
+                <input type="time" id="timeDev" class="field-time-contact" required>
+
+                <label for="fechaNacimiento"></label>
+                <input type="date" class="field-contact" id="fechaNacimiento" required>
+
+                <label for="Mensaje"></label>
+                <textarea type="text" class="field-text" id="msj" placeholder="Deja tu mensaje"></textarea>
+
+
+                <input type="submit" class="send-contact">
+            </form>
+        </div>
+
+        <div class="sucursales">
+            <div class="mapa">
+                <h3 class="lugar">Aeroparque</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13143.292970959334!2d-58.4170088!3d-34.5580305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfdd992892f9ccadb!2sAeroparque%20Internacional%20Jorge%20Newbery!5e0!3m2!1ses-419!2sar!4v1663381915225!5m2!1ses-419!2sar"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mapa">
+                <h3 class="lugar">Ezeiza</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18529.877556055668!2d-58.537966374798515!3d-34.81473335031077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd0f4e2dea557%3A0xf19b6f81d441cc3b!2sAeropuerto%20Internacional%20Ezeiza!5e0!3m2!1ses-419!2sar!4v1663382115871!5m2!1ses-419!2sar"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <div class="foot">
+    </div>
+    <footer>
+        <img class="foot-logo" src="assets/img/logo blanco.png">
+        <p>&copy Todos los derechos reservados - 2022</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
