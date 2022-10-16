@@ -1,0 +1,76 @@
+{
+    "imagenes":[
+        {
+            "nombre":"Toyota Corolla",
+            "path": "/imgs/corolla.png",
+            "desc": "Toyota Corolla",
+            "id":"TC-1",
+            "categoria": "alta",
+            "precio":"Desde $14.250 por día"
+        },
+        {
+            "nombre":"Etios Sedan",
+            "path": "/imgs/etios-sedan.png",
+            "desc": "Etios Sedan",
+            "id":"ES-2",
+            "categoria": "media",
+            "precio":"Desde $11.350 por día"
+        },
+        {
+            "nombre":"Frontier",
+            "path": "/imgs/frontier.png",
+            "desc": "Frontier",
+            "id":"F-3",
+            "categoria": "alta",
+            "precio":"Desde $14.250 por día"
+        },
+        {
+            "nombre":"Volskwagen Gol",
+            "path": "/imgs/gol.png",
+            "desc": "Volskwagen Gol",
+            "id":"VG-4",
+            "categoria": "economica",
+            "precio":"Desde $9.550 por día"
+        },
+        {
+            "nombre":"Etios Hatch",
+            "path": "/imgs/hatch-etios.png",
+            "desc": "Etios Hatch",
+            "id":"EH-5",
+            "categoria": "economica",
+            "precio":"Desde $9.550 por día"
+        },
+        {
+            "nombre":"Kangoo",
+            "path": "/imgs/kangoo.png",
+            "desc": "Kangoo",
+            "id":"RK-6",
+            "categoria": "media",
+            "precio":"Desde $11.350 por día"
+        },
+        {
+            "nombre":"Kwid",
+            "path": "/imgs/kwid.png",
+            "desc": "Kwid",
+            "id":"K-7",
+            "categoria": "economica",
+            "precio":"Desde $9.550 por día"
+        },
+        {
+            "nombre":"Chevrolet Onix",
+            "path": "/imgs/onix.png",
+            "desc": "Chevrolet Onix",
+            "id":"CO-8",
+            "categoria": "media",
+            "precio":"Desde $11.350 por día"
+        },
+        {
+            "nombre":"Chrevrolet Spin",
+            "path": "/imgs/spin.png",
+            "desc": "Chrevrolet Spin",
+            "id":"CS-9",
+            "categoria": "alta",
+            "precio":"Desde $14.250 por día"
+        }
+    ]
+}

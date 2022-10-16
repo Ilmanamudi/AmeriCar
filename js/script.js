@@ -1,6 +1,16 @@
+// menu
+
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+  
+});
+
 //reseña
 
-const btn = document.querySelector("button");
+const btn = document.querySelector(".btn-com");
 const post = document.querySelector(".post");
 const widget = document.querySelector(".star-widget");
 const editBtn = document.querySelector(".edit");
@@ -15,20 +25,13 @@ btn.onclick = () => {
   }
   return false;
 }
-// menu
 
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click",()=>{
-  navMenu.classList.toggle("nav-menu_visible");
-});
 
 //validacion formulario contacto
 
 const inputNacimiento = document.querySelector("#fechaNacimiento")
 
-inputNacimiento.addEventListener("blur", (evento)=>{
+inputNacimiento.addEventListener("blur",(evento)=>{
     validarNacimiento(evento.target);
 });
 

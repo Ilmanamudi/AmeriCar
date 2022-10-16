@@ -63,11 +63,12 @@ body {
     line-height: 60px;
     cursor: pointer;
     display: none;
+    transition: all .5s ease;
 }
 .main-index{
     background-image: url(/assets/img/imagen_1.jpg);
     background-size: cover;
-    animation: fade 20s infinite reverse;
+    animation: fade 25s infinite;
     opacity: 100%;
     height: 75vh;
     border-style: solid;
@@ -76,19 +77,26 @@ body {
 }
 /* Animacion de slider */
 @keyframes fade {
-    33% {
+    0% {
         background-image: url(/assets/img/imagen_1.jpg);
-        background-size: cover;
     }
-
-    66% {
-        background-image: url(/assets/img/imagen_2.jpg);
-        background-size: cover;
+    10% {
+        background-image: url(/assets/img/imagen_2.jpg);   
     }
-
-    99% {
+    30% {
         background-image: url(/assets/img/imagen_3.jpg);
-        background-size: cover;
+    }
+    50% {
+        background-image: url(/assets/img/imagen_1.jpg);
+    }
+    70% {
+        background-image: url(/assets/img/imagen_2.jpg);   
+    }
+    90% {
+        background-image: url(/assets/img/imagen_3.jpg);
+    }
+    100% {
+        background-image: url(/assets/img/imagen_1.jpg);
     }
 }
 .form-search {
@@ -195,8 +203,7 @@ footer {
 
 .flota-container {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    justify-content:center;
     flex-flow: row wrap;
     padding: 5px;
     min-height: 75vh;
@@ -204,25 +211,37 @@ footer {
     width: 100%;
     min-width: 300px;
     box-sizing: border-box;
+    
 }
 
 .flota-item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px;
     height: 200px;
     width: 200px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.644);
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 30px;
     text-align: center;
     box-shadow: 2px 2px 2px rgb(191, 187, 187);
+    cursor: pointer;
 }
 
 .flota-item img {
     width: 100%;
     height: auto;
     object-fit: center;
+    
+}
+.flota-text{
+    font-size: 16px;
+    font-weight:900;
+    color: var(--var-principal);    
 }
 
 /* CSS FAQ */
@@ -243,7 +262,7 @@ footer {
     height:auto;
     margin:20px; 
     width: 600px;
-    min-width: 300px;
+    min-width: 300px; 
 
 }
 .title-faq {
@@ -534,7 +553,7 @@ form .btn button:hover{
 .contact{
     display: flex;
     color:rgba(255, 252, 246, 0.971);
-    justify-content: center;   
+    justify-content: center;  
 }
 .contact-form{
     margin-top: 20px;
@@ -652,7 +671,7 @@ form .btn button:hover{
     }
     .logo{
         margin-left: 50px;
-        
+        z-index: 9000;
     }
     
     .nav-menu{
@@ -665,29 +684,40 @@ form .btn button:hover{
         top: 70px;
         width: 100%;
         padding: 10px 0;
-
         height: calc(100% - 60px);
         overflow-y:auto ;
         left: 100%;
+        
     }
     .nav-menu-item{
         line-height: 50px;
+        
     }
     
     .nav-menu-link:hover, .nav-menu-link_active{
         color: var(--var-secundario);
-        transition: 0.5s;
+        transition: all 0.5s;
+      
     }
     .nav-toggle{  
         display: block;
     }
     .nav-menu_visible{
         left: 0;
-        transition: left 0.3s;
+        transition: left 0.5s;
+        
     }
+    .search{
+        backdrop-filter: none;
+    }
+    .contact-form{
+        backdrop-filter: none;
+    }
+   
     .nav-toggle:focus:not(:focus-visible){
         outline: none;
     }
+   
 
     footer {
         flex-flow: column;
