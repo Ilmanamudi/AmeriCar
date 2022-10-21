@@ -253,6 +253,7 @@ footer {
     min-height: 75vh;
     min-width: 350px;
     margin-block-end: auto;
+    
 }
 .faq{
    
@@ -262,7 +263,8 @@ footer {
     height:auto;
     margin:20px; 
     width: 600px;
-    min-width: 300px; 
+    min-width: 300px;
+    /* z-index: -1; */
 
 }
 .title-faq {
@@ -274,23 +276,30 @@ footer {
 }
 .wrapper{
     min-width: 300px;
-    padding: 3px 20px;
+    padding: 0px 20px;
     
 }
 .wrapper .parent-tab,
 .wrapper .child-tab{
-    margin-bottom: 0px;
-    border-radius: 3px;
+    margin-bottom: 5px;
+    /* border-radius: 3px; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
 }
 .wrapper .parent-tab label,
-.wrapper .child-tab label{
+.wrapper .child-tab label {
     background:var(--var-terciario);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    /* border-radius: 5px; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     position: relative;
+   
     z-index: 99;
 }
 
@@ -298,8 +307,10 @@ footer {
     color: var(--var-principal);
     font-size: 18px;
     font-weight: bold;
+    border-radius: 3px;
     
 }
+
 .wrapper label .icon{
     position: relative;
     min-height: 30px;
@@ -309,8 +320,8 @@ footer {
     border-radius: 50%;
    
 }
-.parent-tab input:checked~ label .icon i:before,
-.child-tab input:checked~ label .icon i:before{
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
     content:"\f068" ;
 }
 .wrapper label .icon i{
@@ -328,16 +339,22 @@ footer {
     overflow: hidden;
     transition: all 0.4 ease;
     background:var(--var-terciario);
+    /* margin: 5px; */
+    /* border-radius: 5px; */
+    padding: 0px 20px;
 }
 .parent-tab input:checked ~ .content,
 .child-tab input:checked ~ .sub-content{
     max-height: 100vh;
 }
-
+.tab-4 input:checked ~ .content{
+    padding: 15px 20px;
+}
 .wrapper .parent-tab .content,
-.wrapper .child-tab .content{
+.wrapper .child-tab .sub-content{
     font-size: 16px;
-    padding: 3px 20px;    
+    padding: 0px 20px;    
+    /* margin: 5px; */
 }
 
 .wrapper input{
