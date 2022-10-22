@@ -16,8 +16,6 @@ body {
     margin-top: 25px;
     height: 60px;
     width: 100%;
-    /* position: sticky;
-    top: 0; */
 }
 .logo{
     width: 150px;
@@ -65,16 +63,21 @@ body {
     display: none;
     transition: all .5s ease;
 }
+
+
 .main-index{
     background-image: url(/assets/img/imagen_1.jpg);
-    background-size: cover;
+    background-size:contain;
+    background-repeat: no-repeat;
     animation: fade 25s infinite;
     opacity: 100%;
-    height: 75vh;
+    height: 83vh;
     border-style: solid;
     border-color: var(--var-terciario);
     border-width: 0.1px;
+    min-width: 450px;   
 }
+
 /* Animacion de slider */
 @keyframes fade {
     0% {
@@ -99,7 +102,16 @@ body {
         background-image: url(/assets/img/imagen_1.jpg);
     }
 }
+.img-slider{
+    display: flex;
+    justify-content:left;
+    padding: 50px;
+    flex-direction: column;
+    min-width: 300px;
+    
+}
 .form-search {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,8 +123,9 @@ body {
     font-size: 0.8rem;
     color: rgba(255, 252, 246, 0.971);
     letter-spacing: 1px;
-    margin: 50px;
+    
 
+    
 }
 .search {
     display: flex;
@@ -169,7 +182,6 @@ body {
     background-image: linear-gradient(to right, #FF8008 0%, #fabd21 51%, #FF8008 100%);
     border: none;
     border-radius: 5px;
-    /* transition: 1s all; */
     cursor: pointer;
 }
 
@@ -253,6 +265,7 @@ footer {
     min-height: 75vh;
     min-width: 350px;
     margin-block-end: auto;
+    
 }
 .faq{
    
@@ -262,7 +275,8 @@ footer {
     height:auto;
     margin:20px; 
     width: 600px;
-    min-width: 300px; 
+    min-width: 300px;
+    /* z-index: -1; */
 
 }
 .title-faq {
@@ -274,23 +288,30 @@ footer {
 }
 .wrapper{
     min-width: 300px;
-    padding: 3px 20px;
+    padding: 0px 20px;
     
 }
 .wrapper .parent-tab,
 .wrapper .child-tab{
-    margin-bottom: 0px;
-    border-radius: 3px;
+    margin-bottom: 5px;
+    /* border-radius: 3px; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
 }
 .wrapper .parent-tab label,
-.wrapper .child-tab label{
+.wrapper .child-tab label {
     background:var(--var-terciario);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    /* border-radius: 5px; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     position: relative;
+   
     z-index: 99;
 }
 
@@ -298,8 +319,10 @@ footer {
     color: var(--var-principal);
     font-size: 18px;
     font-weight: bold;
+    border-radius: 3px;
     
 }
+
 .wrapper label .icon{
     position: relative;
     min-height: 30px;
@@ -309,8 +332,8 @@ footer {
     border-radius: 50%;
    
 }
-.parent-tab input:checked~ label .icon i:before,
-.child-tab input:checked~ label .icon i:before{
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
     content:"\f068" ;
 }
 .wrapper label .icon i{
@@ -328,16 +351,22 @@ footer {
     overflow: hidden;
     transition: all 0.4 ease;
     background:var(--var-terciario);
+    /* margin: 5px; */
+    /* border-radius: 5px; */
+    padding: 0px 20px;
 }
 .parent-tab input:checked ~ .content,
 .child-tab input:checked ~ .sub-content{
     max-height: 100vh;
 }
-
+.tab-4 input:checked ~ .content{
+    padding: 15px 20px;
+}
 .wrapper .parent-tab .content,
-.wrapper .child-tab .content{
+.wrapper .child-tab .sub-content{
     font-size: 16px;
-    padding: 3px 20px;    
+    padding: 0px 20px;    
+    /* margin: 5px; */
 }
 
 .wrapper input{
@@ -460,9 +489,6 @@ form .textarea textarea{
     font-size: 16px;
     resize: none;
 }
-::placeholder{
-    color:  #044a1166;
-}
 
 form .btn button{
     height: 40px;
@@ -534,6 +560,7 @@ form .btn button:hover{
 }
 
 /* CSS Contacto */
+
 .main-contact{
     display: flex;
     flex-direction: column;
@@ -544,11 +571,6 @@ form .btn button:hover{
     background-image:url(/assets/img/imagen_1.JPG);
     background-size:cover;
 }  
-.flota-item img {
-    width: 100%;
-    height: auto;
-    object-fit: center;
-}
 
 .contact{
     display: flex;
@@ -556,10 +578,11 @@ form .btn button:hover{
     justify-content: center;  
 }
 .contact-form{
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    align-items: center;
     padding: 10px;
     max-width: 680px;
     min-width: 300px;
@@ -611,7 +634,7 @@ form .btn button:hover{
     font-family: 'Montserrat', sans-serif;
 }
 .field-ico{
-    font-family:'FontAwesome';
+    
     font-weight: 300;
     text-align: left;
     margin: 5px;
@@ -656,44 +679,42 @@ form .btn button:hover{
     margin: 15px 50px;
 }
 
+.error{
+    display: none;
+}
 
 
-@media screen and (max-width:768px) {
+@media (max-width:460px) {
 
-    .logo {
-        width: 120px;
+    .img-slider {
+        margin-top: 175px;
+        align-items: center;
+        width: 350px;
+        padding: 20px;
     }
-
-    .header{
-        height: 50px;
-        position: sticky;
-        top: 0;
+     .form-search {
+       width: 100%;       
     }
     .logo{
+        width: 120px;
         margin-left: 50px;
-        z-index: 9000;
+        z-index:4;
     }
     
     .nav-menu{
         flex-direction: column;
         align-items: center;
-        margin-right:25px;
         background-color: var(--var-terciario);
         position: fixed;
-        left: 0;
         top: 70px;
         width: 100%;
         padding: 10px 0;
         height: calc(100% - 60px);
-        overflow-y:auto ;
         left: 100%;
+        z-index: 3;
         
     }
-    .nav-menu-item{
-        line-height: 50px;
-        
-    }
-    
+       
     .nav-menu-link:hover, .nav-menu-link_active{
         color: var(--var-secundario);
         transition: all 0.5s;
@@ -705,25 +726,26 @@ form .btn button:hover{
     .nav-menu_visible{
         left: 0;
         transition: left 0.5s;
-        
     }
-    .search{
-        backdrop-filter: none;
+    .wrapper .parent-tab label,
+    .wrapper .child-tab label {
+    z-index: 2;
     }
-    .contact-form{
-        backdrop-filter: none;
-    }
-   
-    .nav-toggle:focus:not(:focus-visible){
-        outline: none;
-    }
-   
 
-    footer {
-        flex-flow: column;
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 20px;
+
+    .sucursales{
+        width: 100%;
+        flex-flow: column wrap;
     }
+    .mapa{
+        margin: 5px;
+    }
+    .mapa iframe{
+        width: auto;
+    }
+
+
+
+
 
 }

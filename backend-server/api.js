@@ -5,6 +5,7 @@ function render(imagen) {
     <p class="flota-text">${imagen.desc}</p>`
 
     let newId = `${imagen.id}`
+    
     const newDiv = document.createElement("div");
     newDiv.classList.add("flota-item");
     newDiv.setAttribute("id",`${imagen.id}`);
@@ -12,6 +13,8 @@ function render(imagen) {
     
     const flotaDeAutos = document.getElementById("data-car");
     flotaDeAutos.appendChild(newDiv);
+
+    
 }
 
 let URL = "./backend-server/data.json";
