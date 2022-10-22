@@ -10,6 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(90deg, rgba(118, 187, 183, 1) 0%, rgba(183, 212, 178, 1) 48%, rgba(118, 187, 183, 0.9444152661064426) 100%);
 }
+
 .header{
     background: var(--var-terciario);
     padding: 1px;
@@ -64,7 +65,6 @@ body {
     transition: all .5s ease;
 }
 
-
 .main-index{
     background-image: url(/assets/img/imagen_1.jpg);
     background-size:contain;
@@ -75,7 +75,7 @@ body {
     border-style: solid;
     border-color: var(--var-terciario);
     border-width: 0.1px;
-    min-width: 450px;   
+    min-width: 450px;     
 }
 
 /* Animacion de slider */
@@ -108,10 +108,8 @@ body {
     padding: 50px;
     flex-direction: column;
     min-width: 300px;
-    
 }
-.form-search {
-    
+.form-search { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,10 +120,7 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
     color: rgba(255, 252, 246, 0.971);
-    letter-spacing: 1px;
-    
-
-    
+    letter-spacing: 1px;    
 }
 .search {
     display: flex;
@@ -149,7 +144,6 @@ body {
     outline: none;
     color:var(--var-principal);
 }
-
 .field-date {
     flex-flow: row wrap;
     width: 63%;
@@ -160,7 +154,6 @@ body {
     outline: none;
     color:var(--var-principal);
 }
-
 .field-time {
     flex-flow: row;
     width: 30%;
@@ -171,7 +164,6 @@ body {
     outline: none;
     color:var(--var-principal);
 }
-
 .send {
     width: 100%;
     margin-top: 10px;
@@ -184,23 +176,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .send:hover {
     background: var(--var-secundario);
 }
-
 .foot {
     background:var(--var-terciario);
     height: 5px;
 }
-
 .foot-logo {
     display: flex;
     margin-top: 15px;
     margin-left: 50px;
     height: 50px;
 }
-
 footer {
     display: flex;
     justify-content: center;
@@ -216,14 +204,13 @@ footer {
 .flota-container {
     display: flex;
     justify-content:center;
+    align-items: center;
     flex-flow: row wrap;
     padding: 5px;
     min-height: 75vh;
     height: auto;
     width: 100%;
-    min-width: 300px;
-    box-sizing: border-box;
-    
+    min-width: 300px;   
 }
 
 .flota-item {
@@ -248,7 +235,6 @@ footer {
     width: 100%;
     height: auto;
     object-fit: center;
-    
 }
 .flota-text{
     font-size: 16px;
@@ -265,7 +251,6 @@ footer {
     min-height: 75vh;
     min-width: 350px;
     margin-block-end: auto;
-    
 }
 .faq{
    
@@ -276,8 +261,6 @@ footer {
     margin:20px; 
     width: 600px;
     min-width: 300px;
-    /* z-index: -1; */
-
 }
 .title-faq {
     font-weight: bold;
@@ -289,15 +272,12 @@ footer {
 .wrapper{
     min-width: 300px;
     padding: 0px 20px;
-    
 }
 .wrapper .parent-tab,
 .wrapper .child-tab{
     margin-bottom: 5px;
-    /* border-radius: 3px; */
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    
+    border-top-right-radius: 3px;  
 }
 .wrapper .parent-tab label,
 .wrapper .child-tab label {
@@ -307,22 +287,17 @@ footer {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    /* border-radius: 5px; */
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     position: relative;
-   
     z-index: 99;
 }
-
 .wrapper label span {
     color: var(--var-principal);
     font-size: 18px;
     font-weight: bold;
     border-radius: 3px;
-    
 }
-
 .wrapper label .icon{
     position: relative;
     min-height: 30px;
@@ -330,7 +305,6 @@ footer {
     display: block;
     background: var(--var-principal);
     border-radius: 50%;
-   
 }
 .parent-tab input:checked ~ label .icon i:before,
 .child-tab input:checked ~ label .icon i:before{
@@ -344,15 +318,12 @@ footer {
     transform: translate(-50%,-50%);
     color: var(--var-terciario);
 }
-
 .wrapper .parent-tab .content,
 .wrapper .child-tab .sub-content {
     max-height: 0px;
     overflow: hidden;
     transition: all 0.4 ease;
     background:var(--var-terciario);
-    /* margin: 5px; */
-    /* border-radius: 5px; */
     padding: 0px 20px;
 }
 .parent-tab input:checked ~ .content,
@@ -366,9 +337,10 @@ footer {
 .wrapper .child-tab .sub-content{
     font-size: 16px;
     padding: 0px 20px;    
-    /* margin: 5px; */
 }
-
+.content p{
+    margin-bottom: 10px;
+}
 .wrapper input{
     display: none;
 }
@@ -470,7 +442,6 @@ input:checked ~ form{
     text-align: center;
     transition: all 0.2s ease;
 }
-
 .form-rate textarea{
     height: 100px;
     width: 100%;
@@ -489,7 +460,6 @@ form .textarea textarea{
     font-size: 16px;
     resize: none;
 }
-
 form .btn button{
     height: 40px;
     width: 240px;
@@ -514,8 +484,7 @@ form .btn button:hover{
     justify-content: space-around;
     min-height: 150px;
     min-width: 250px;
-    margin: 5px;
-    
+    margin: 5px;   
 }
 .rate-user{
     display: flex;
@@ -544,8 +513,7 @@ form .btn button:hover{
     padding: 10px;
     margin: 0;
     font-weight:bold;
-    color: var(--var-principal);
-    
+    color: var(--var-principal);   
 }
 .user-text p{
     display:flex;
@@ -556,151 +524,28 @@ form .btn button:hover{
     font-size: 16px;
     color: var(--var-principal);
     margin: 0;
-    
 }
 
-/* CSS Contacto */
-
-.main-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    min-height: 75vh;
-    min-width: 350px;
-    background-image:url(/assets/img/imagen_1.JPG);
-    background-size:cover;
-}  
-
-.contact{
-    display: flex;
-    color:rgba(255, 252, 246, 0.971);
-    justify-content: center;  
-}
-.contact-form{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 10px;
-    max-width: 680px;
-    min-width: 300px;
-    height:auto;
-    border-radius: 10px;
-    background-color: rgba(20, 226, 213, 0.182);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-   
-}
-.field-contact {
-    margin: 5px;
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    outline: none;
-    border-style: none;
-    color: var(--var-principal);
-    
-}
-.field-date-contact{
-    margin: 5px;
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    outline: none;
-    border-style: none;
-    color: var(--var-principal);
-}
-.field-time-contact{
-    margin: 5px;
-    padding: 10px;
-    width: 90px;
-    border-radius: 5px;
-    outline: none;
-    border-style: none;
-}
-.field-text {
-    width: 94%;
-    height: 50px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    outline: none;
-    border-style: none;
-    resize: none;
-    color: var(--var-principal);
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-}
-.field-ico{
-    
-    font-weight: 300;
-    text-align: left;
-    margin: 5px;
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px;
-    outline: none;
-    border-style: none;
-    color: var(--var-principal);
-}
-::placeholder{
-    color: var(--var-principal);
-}
-
-.send-contact{
-    width: 96%;
-    min-width: 300px;
-    margin-top: 10px ;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color:  var(--var-terciario);
-    background-image: linear-gradient(to right, #FF8008 0%, #fabd21 51%, #FF8008 100%);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;   
-}
-.send-contact:hover{
-    background: var(--var-secundario);
-} 
-.sucursales{
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 100%;
-    background-color: var(--var-terciario);
-    min-height:250px;
-    margin-top:50px;
-    text-align: center;
-    justify-content: center;
-}
-.mapa{
-    margin: 15px 50px;
-}
-
-.error{
-    display: none;
-}
-
-
-@media (max-width:460px) {
+@media (max-width:768px) {
 
     .img-slider {
-        margin-top: 175px;
+        margin: 300px 0 0 150px;
         align-items: center;
-        width: 350px;
-        padding: 20px;
+        width: fit-content;
     }
      .form-search {
        width: 100%;       
+    }
+    .search {
+        background-color: rgba(14, 99, 93, 0.322);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
     .logo{
         width: 120px;
         margin-left: 50px;
         z-index:4;
     }
-    
     .nav-menu{
         flex-direction: column;
         align-items: center;
@@ -712,13 +557,11 @@ form .btn button:hover{
         height: calc(100% - 60px);
         left: 100%;
         z-index: 3;
-        
     }
        
     .nav-menu-link:hover, .nav-menu-link_active{
         color: var(--var-secundario);
         transition: all 0.5s;
-      
     }
     .nav-toggle{  
         display: block;
@@ -731,11 +574,17 @@ form .btn button:hover{
     .wrapper .child-tab label {
     z-index: 2;
     }
-
-
     .sucursales{
         width: 100%;
         flex-flow: column wrap;
+    }
+}
+
+@media (max-width:460px) {
+    .img-slider {
+        margin: 200px 0 0 0px;
+        align-items: center;
+        padding: 25px;
     }
     .mapa{
         margin: 5px;
@@ -743,9 +592,4 @@ form .btn button:hover{
     .mapa iframe{
         width: auto;
     }
-
-
-
-
-
 }

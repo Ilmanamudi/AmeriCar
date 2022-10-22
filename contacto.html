@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!DOCTYPE html>
-    <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +7,7 @@
         <title>AmeriCar</title>
         <link rel="icon" href="/assets/img/favicon.ico"/>
         <link rel="Stylesheet" href="css/style.css">
+        <link rel="Stylesheet" href="css/contacto.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -36,56 +35,117 @@
         </nav>
 </header>
     <main class="main-contact">
+        <div class="contact-form">
+            <form action="" class="formulario" id="formulario">
     
-        <div class="contact">
+                <div class="entradas">
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre"
+                                placeholder="Ingrese su nombre">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El nombre debe contener sólo letras, no puede enviar el campo vacío</p>
+                    </div>
     
-            <form class="contact-form" id="userForm">
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label">Apellido</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                placeholder="Ingrese su apellido">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El apellido debe contener sólo letras, no puede enviar el campo vacío</p>
+                    </div>
     
-                <label for="userName"></label>
-                <input type="text" class="field-ico" id="userName" name="userName" placeholder="Nombre" required>
+                    <!-- Grupo: Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo"
+                                placeholder="Ingrese su correo electrónico">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ingrese un correo válido, no puede enviar el campo vacío</p>
+                    </div>
     
-                <label for="lastname"></label>
-                <input type="text" class="field-ico" id="userLastname" name="lastname" placeholder="Apellido" required>
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono"
+                                placeholder="Ingrese su número de teléfono">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El teléfono solo puede contener números, no puede enviar el campo vacío</p>
+                    </div>
     
-                <label for="userEmail"></label>
-                <input type="userEmail" class="field-ico" id="userEmail" name="userEmail" autocomplete="off"
-                    placeholder="Correo Electrónico">
+                </div>
+                <div class="eleccion">
+                    <div class="fecha">
+                        <label for="Lugarderetiro">Lugar de retiro</label>
+                        <select name="retiro" class="field-contact" required>
+                            <option value="Aeroparque">Aeroparque</option>
+                            <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                        </select>
+                    </div>
+                    <div class="fecha">
+                        <label for="fechaRetiro">Fecha de retiro</label>
+                        <input type="date" id="fechaRetiro" class="field-date-contact" min="datetime-local" required>
+                    </div>
+                    <div class="fecha">
+                        <label for="timeRetiro">Hora</label>
+                        <input type="time" id="timeRetire" class="field-time-contact" required>
+                    </div>
     
-                <label for="Tlf"></label>
-                <input type="text" class="field-ico" id="Tlf" name="Tlf" placeholder="Número de teléfono">
+                    <div class="fecha">
+                        <label for="devolucion">Lugar de devolución</label>
+                        <select name="devolucion" class="field-contact" required>
+                            <option value="Aeroparque">Aeroparque</option>
+                            <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                        </select>
+                    </div>
+                    <div class="fecha">
+                        <label for="fechaDevolucion">Fecha de devolución</label>
+                        <input type="date" id="fechaDevolucion" class="field-date-contact" min="datetime-local" required>
+                    </div>
+                    <div class="fecha">
+                        <label for="timeRetiro">Hora</label>
+                        <input type="time" id="timeRetiro" class="field-time-contact" required>
+                    </div>
+                    <div class="fechaNac">
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" class="field-contact" id="fechaNacimiento" required>
+                    </div>
+
+                    <div class="consulta">
+                        <label for="Mensaje">Consulta</label>
+                        <textarea type="text" class="field-text" id="Msj" placeholder="Escriba su consulta..."></textarea>
+                    </div>
     
-                <label for="Lugarderetiro"></label>
-                <select name="retiro" class="field-contact" required>
-                    <option value="Aeroparque">Aeroparque</option>
-                    <option value="Ezeiza">Aeropuerto de Ezeiza</option>
-                </select>
-        
-                <label for="fechaRetiro"></label>
-                <input type="date" id="fechaRetiro" class="field-date-contact" min="datetime-local" required>
-            
-                <label for="timeRetiro"></label>
-                <input type="time" id="timeRetire" class="field-time-contact" required>
-            
-                <label for="lugardedevolucion"></label>
-                <select name="devolucion" class="field-contact" required>
-                    <option value="Aeroparque">Aeroparque</option>
-                    <option value="Ezeiza">Aeropuerto de Ezeiza</option>
-                </select>
-            
-                <label for="fechadevolucion"></label>
-                <input type="date" id="fechadevolucion" class="field-date-contact" required>
-            
-                <label for="timeDev"></label>
-                <input type="time" id="timeDev" class="field-time-contact" required>
-            
-                <label for="fechaNacimiento">Fecha de nacimientoFecha de nacimiento</label>
-                <input type="date" class="field-contact" id="fechaNacimiento" required>
-            
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Términos y Condiciones
+                        </label>
+                    </div>
+    
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
+    
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
+                        </p>
+                    </div>
+                </div>
                 <label for="Mensaje"></label>
-                <textarea type="text" class="field-text" id="Msj" placeholder="Deja tu mensaje"></textarea>
-                -
-    
-                <button type="submit" class="send-contact">Enviar</button>
             </form>
         </div>
     
@@ -113,7 +173,6 @@
         <p>&copy Todos los derechos reservados - 2022</p>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/validacion.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
-
 </html>
