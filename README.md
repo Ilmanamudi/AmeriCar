@@ -1,7 +1,12 @@
 # AmeriCar (Proyecto para Codo a Codo, FullStack Python-2022)
+<!DOCTYPE html>
+<html>
+<body>
+
+<div align="center">
+
 Pagina web de alquiler de autos
 
-<p align="center">
 
 Para nuestro desarrollo web, utilizamos HTML, CSS y JS. El proyecto cuenta con 5 paginas HTML: inicio, flota, faq, reseñas y contacto.
 
@@ -17,7 +22,9 @@ En **RESEÑAS**, el usuario puede ver las calificaciones y reseñas dadas por nu
 
 Finalmente, en la pagina de **CONTACTO**, se encuentra un formulario donde el usuario puede dejar sus datos a fin de que la agencia se comunique con el.
 
-</p>
+</div>
+</body>
+</html>
 
 ![americar-inicio](https://user-images.githubusercontent.com/115589656/197308163-5d6aea55-ce91-4345-a6ee-95c22cd9ae02.png)
 
