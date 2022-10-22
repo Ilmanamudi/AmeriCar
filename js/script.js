@@ -57,26 +57,4 @@ function mayorDeEdad(fecha){
 return (diferenciaFechas <=fechaActual);
 }
 
-/*const formulario = document.getElementById("formulario");
-const userName = document.getElementById("userName");
-const lastname = document.getElementById("lastname");
-const userEmail = document.getElementById("userEmail");
-
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const regUserName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-    const reglastname = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-    const regUserEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
-
-    if (!regUserName.test(userName.value)) {
-        return console.log("Solo letras");
-    }
-
-    if (!regUserEmail.test(userEmail.value)) {
-        return console.log("Formato email no válido");
-    }
-
-    console.log("Formulario enviado con éxito");
-});*/
 
