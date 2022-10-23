@@ -200,6 +200,7 @@ footer {
     margin-bottom: 15px;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
     color:  var(--var-terciario);
 }
 
@@ -609,6 +610,9 @@ form .btn button:hover{
         width: 330px;
         height: 330px;
         margin-bottom: 20px;
+    }
+    .faq{
+        align-items: center;
     }
     
 }
