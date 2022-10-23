@@ -532,10 +532,11 @@ form .btn button:hover{
     .img-slider {
         margin: 300px 0 0 150px;
         align-items: center;
-        width: fit-content;
     }
     .main-index{
     height: auto;
+   
+    
     }
     .search {
         background-color: rgba(14, 99, 93, 0.322);
@@ -589,9 +590,15 @@ form .btn button:hover{
     .mapa iframe{
         width: auto;
     }
-   
+    .header{
+        background: var(--var-terciario);
+        height: auto;
+        width: 100%;
+    }
     .main-index{  
-        background-position: top;
+        border-style: none;
+        box-sizing:content-box;
+        position: absolute;
     }
     .img-slider {
         margin: 150px 0 0 0px;
