@@ -17,7 +17,7 @@
     height: auto;
     min-height: 75vh;
     min-width: 350px;
-    background-image:url(/assets/img/imagen_1.JPG);
+    background-image:url(/assets/imagen1.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }  
@@ -67,7 +67,7 @@
 	margin-bottom: 25px;
 	font-weight: bold;
 }
-.field-contact {
+.field-contact, .field-nac-contact {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
@@ -244,4 +244,40 @@
 }
 .contact-form-incorrecto{
     background-color: rgba(8, 33, 31, 0.359);
+}
+@media (max-width:450px) {
+   
+  .contact-form{
+	width: 350px;
+	text-align: center;
+  }
+  .formulario__grupo-input{
+	width: 320px;
+  }
+  .eleccion{
+	width: 320px;
+	
+  }
+  .field-contact{
+	width: 315px;
+  }
+  .field-time-contact{
+	width:85px;
+  }
+  .field-date-contact{
+	width: 210px;
+	margin-right:10px;
+  }
+  .field-nac-contact{
+	width: 315px;
+  }
+  .consulta{
+	width: 310px;
+  }
+  .formulario__btn{
+	width: 330px;
+  }
+  .formulario__mensaje{
+	height: auto;
+  }
 }
