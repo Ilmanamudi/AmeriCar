@@ -75,7 +75,6 @@ body {
     border-style: solid;
     border-color: var(--var-terciario);
     border-width: 0.1px;
-    min-width: 450px;     
 }
 
 /* Animacion de slider */
@@ -211,8 +210,8 @@ footer {
     padding: 5px;
     min-height: 75vh;
     height: auto;
-    width: 100%;
-    min-width: 300px;   
+    width: auto;
+     
 }
 
 .flota-item {
@@ -251,7 +250,7 @@ footer {
     align-items: center;
     height: auto;
     min-height: 75vh;
-    min-width: 350px;
+    width: auto;
     margin-block-end: auto;
 }
 .faq{
@@ -583,27 +582,24 @@ form .btn button:hover{
 }
 
 @media (max-width:460px) {
-    .img-slider {
-        margin: 200px 0 0 0px;
-        align-items: center;
-        padding: 25px;
-    }
+   
     .mapa{
         margin: 5px;
     }
     .mapa iframe{
         width: auto;
     }
-    .search { 
-                     
-        width: 320px;
+   
+    .main-index{  
+        background-position: top;
+    }
+    .img-slider {
+        margin: 150px 0 0 0px;
+        align-items: center;
+        padding: 25px;  
+    }
+    .search {            
+        width: 80%;
         height: auto;
-        border-radius: 10px;
-       
     }
-    .nav-menu{
-        position: absolute;
-        z-index: 3;
-    }
-  
 }
