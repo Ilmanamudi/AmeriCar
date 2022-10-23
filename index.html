@@ -44,28 +44,39 @@
         <div class="img-slider">
             <div class="form-search">
                 <form class="search" id="form-search-id">
-                    <label for="retiro">Lugar de retiro</label>
-                    <select name="retiro" class="option" placeholder="Lugar de retiro" required>
-                        <option value="">Aeroparque</option>
-                        <option value="">Aeropuerto de Ezeiza</option>
-                    </select>
-
-                    <label for="fechaRetiro" text-label>Fecha y hora de retiro</label>
-                    <label for="time-Retire" text-label></label>
-                    <input type="date" id="fechaRetiro" class="field-date" required>
-                    <input type="time" id="time-Retire" class="field-time" required>
-
-                    <label for="devolucion">Lugar de devolución</label>
-                    <select name="devolucion" class="option" placeholder="Lugar de devolucion" required>
-                        <option value="Aeroparque">Aeroparque</option>
-                        <option value="Ezeiza">Aeropuerto de Ezeiza</option>
-                    </select>
-
-                    <label for="fechadevolucion">Fecha y hora de devolución</label>
-                    <label for="time-dev"></label>
-                    <input type="date" id="fechadevolucion" class="field-date" required>
-                    <input type="time" id="time-dev" class="field-time" required>
-
+                    <div class="place">
+                        <label for="retiro">Lugar de retiro</label>
+                        <select name="retiro" class="field-place" placeholder="Lugar de retiro" required>
+                            <option value="">Aeroparque</option>
+                            <option value="">Aeropuerto de Ezeiza</option>
+                        </select>
+                    </div>
+                    <div class="place-date">
+                        <label for="fechaRetiro" text-label>Fecha de retiro</label>
+                        <input type="date" id="fechaRetiro" class="field-date" required>
+                    </div>
+            
+                    <div class="place-time">
+                        <label for="time-Retire" text-label>Hora</label>
+                        <input type="time" id="time-Retire" class="field-time" required>
+                    </div>
+            
+                    <div class="place">
+                        <label for="devolucion">Lugar de devolución</label>
+                        <select name="devolucion" class="field-place" placeholder="Lugar de devolucion" required>
+                            <option value="Aeroparque">Aeroparque</option>
+                            <option value="Ezeiza">Aeropuerto de Ezeiza</option>
+                        </select>
+                    </div>
+                    <div class="place-date">
+                        <label for="fechadevolucion">Fecha de devolución</label>
+                        <input type="date" id="fechadevolucion" class="field-date" required>
+                    </div>
+            
+                    <div class="place-time">
+                        <label for="time-dev">Hora</label>
+                        <input type="time" id="time-dev" class="field-time" required>
+                    </div>
                     <input type="submit" value="Buscar" class="send">
                 </form>
             </div>
