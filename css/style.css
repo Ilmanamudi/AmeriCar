@@ -157,6 +157,7 @@ body {
 .place-time{
     flex-direction: column;
     width: 35%;
+    margin-left: 5px;
 }
 .field-time{
     width: 85%;
@@ -600,7 +601,6 @@ form .btn button:hover{
     }
     .form-search{
         margin-top:0px;
-
         padding: 0px;
         min-width: 300px;
     }
